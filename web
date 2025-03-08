@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmmaker Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: #0a0a0a; color: #fff; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: rgba(0, 0, 0, 0.8); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: bold; text-transform: uppercase; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+        #hero { display: flex; justify-content: center; align-items: center; height: 100vh; background: url('https://source.unsplash.com/1600x900/?cinematic,film') no-repeat center/cover; text-align: center; }
+        #hero h1 { font-size: 60px; text-transform: uppercase; letter-spacing: 3px; }
+        #hero p { font-size: 22px; margin-top: 10px; }
+        section { padding: 80px 50px; text-align: center; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .project { position: relative; overflow: hidden; border-radius: 10px; }
+        .project img { width: 100%; transition: transform 0.3s ease-in-out; }
+        .project:hover img { transform: scale(1.1); }
+        .project h3 { position: absolute; bottom: 15px; left: 15px; background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 5px; font-size: 18px; }
+        #contact p { font-size: 18px; margin-top: 10px; }
+        footer { text-align: center; padding: 20px; background: #111; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Filmmaker Name</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div>
+            <h1>Bringing Stories to Life</h1>
+            <p>Passionate Filmmaker | Visionary Creator | Camera Master</p>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm a filmmaker who believes in the power of storytelling. Through my lens, I capture not just moments, but emotions, atmospheres, and stories that live on forever. Whether it's a short film or a full-length feature, I aim to create visuals that connect and resonate with people.</p>
+    </section>
+    
+    <section id="work">
+        <h2>Take a Look at My Work</h2>
+        <div class="portfolio-grid">
+            <div class="project">
+                <img src="https://source.unsplash.com/500x300/?movie-set" alt="Project 1">
+                <h3>Project Title</h3>
+            </div>
+            <div class="project">
+                <img src="https://source.unsplash.com/500x300/?camera" alt="Project 2">
+                <h3>Project Title</h3>
+            </div>
+            <div class="project">
+                <img src="https://source.unsplash.com/500x300/?director" alt="Project 3">
+                <h3>Project Title</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Let's Connect!</h2>
+        <p>Whether you’re looking to collaborate, have a question, or just want to say hello—I'd love to hear from you!</p>
+        <p>Email: example@example.com</p>
+        <p>Instagram: @filmmakerhandle</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Filmmaker Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
